@@ -9,12 +9,6 @@ import {
 import styles from './styles';
 import { ListItem, SearchBar } from 'react-native-elements';
 import MenuImage from '../../components/MenuImage/MenuImage';
-import {
-  getCategoryName,
-  getRecipesByRecipeName,
-  getRecipesByCategoryName,
-  getRecipesByIngredientName
-} from '../../data/MockDataAPI';
 
 export default class SearchScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {

@@ -83,7 +83,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'black',
     textAlign: 'center'
-  }
+  },
+  mapStyle: {
+    // width: Dimensions.get('window').width,
+    // height: Dimensions.get('window').height,
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').height
+    // height: 300
+  },
 });
 
 export default styles;

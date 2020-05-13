@@ -3,8 +3,6 @@ import { FlatList, ScrollView, Text, View, TouchableHighlight, Image } from 'rea
 import styles from './styles';
 // import { recipes } from '../../data/dataArrays';
 import MenuImage from '../../components/MenuImage/MenuImage';
-import DrawerActions from 'react-navigation';
-import { getCategoryName } from '../../data/MockDataAPI';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = ({ navigation }) => ({
@@ -47,7 +45,6 @@ export default class HomeScreen extends React.Component {
       <View style={styles.container}>
         <Image style={styles.photo} source={{ uri: data.item.image }} />
         <Text style={styles.title}>{data.item.title}</Text>
-        {/* <Text style={styles.category}>{getCategoryName(item.categoryId)}</Text> */}
       </View>
     </TouchableHighlight>
 

@@ -22,24 +22,16 @@ export default class DrawerContainer extends React.Component {
             title="Regiuni"
             source={require('../../../assets/icons/category.png')}
             onPress={() => {
-              navigation.navigate('Categories');
-              navigation.closeDrawer();
+              // navigation.navigate('Categories');
+              // navigation.closeDrawer();
             }}
           />
-          {/* <MenuButton
-            title="SEARCH"
-            source={require('../../../assets/icons/search.png')}
-            onPress={() => {
-              navigation.navigate('Search');
-              navigation.closeDrawer();
-            }}
-          /> */}
           <MenuButton
             title="Contact"
             source={require('../../../assets/icons/contact.png')}
             onPress={() => {
-              navigation.navigate('Categories');
-              navigation.closeDrawer();
+              // navigation.navigate('Categories');
+              // navigation.closeDrawer();
             }}
           />
           <Text style={styles.link}>www.turecubicla.ro</Text>
