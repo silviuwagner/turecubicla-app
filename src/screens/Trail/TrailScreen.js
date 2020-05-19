@@ -10,9 +10,6 @@ import {
 import styles from './styles';
 import BackButton from '../../components/BackButton/BackButton';
 import StartTrailButton from '../../components/StartTrailButton/StartTrailButton';
-import MapView from 'react-native-maps';
-
-const { width: viewportWidth } = Dimensions.get('window');
 
 export default class TrailScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
@@ -46,7 +43,7 @@ export default class TrailScreen extends React.Component {
                 dataSource: responseJson
             })
         })
-        .catch(error=>console.log(error)) //to catch the errors if any
+        .catch(error=>console.log(error))
   };
 
   renderImage = ({ item }) => (
@@ -57,14 +54,7 @@ export default class TrailScreen extends React.Component {
     </TouchableHighlight>
   );
 
-  // onPressIngredient = item => {
-  //   var name = getIngredientName(item);
-  //   let ingredient = item;
-  //   this.props.navigation.navigate('Ingredient', { region, title });
-  // };
-
   render() {
-    const { activeSlide } = this.state;
     const { navigation } = this.props;
     const item = navigation.getParam('item');
 

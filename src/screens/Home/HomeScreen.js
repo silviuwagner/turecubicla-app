@@ -1,7 +1,6 @@
 import React from 'react';
-import { FlatList, ScrollView, Text, View, TouchableHighlight, Image } from 'react-native';
+import { FlatList, Text, View, TouchableHighlight, Image } from 'react-native';
 import styles from './styles';
-// import { recipes } from '../../data/dataArrays';
 import MenuImage from '../../components/MenuImage/MenuImage';
 
 export default class HomeScreen extends React.Component {
@@ -33,7 +32,7 @@ export default class HomeScreen extends React.Component {
                   dataSource: responseJson
               })
           })
-          .catch(error=>console.log(error)) //to catch the errors if any
+          .catch(error=>console.log(error))
   };
 
   onPressRecipe = item => {
