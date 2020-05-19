@@ -101,14 +101,6 @@ export default class TrailScreen extends React.Component {
           <View style={styles.infoContainer}>
             <Text style={styles.infoDescriptionRecipe}>{item.about}</Text>
           </View>
-            {/* <MapView style={styles.mapStyle}
-              initialRegion={{
-                latitude: 45.94320,
-                longitude: 24.96680,
-                latitudeDelta: 0.0922,
-                longitudeDelta: 0.0421
-              }}
-            /> */}
         </View>
       </ScrollView>
     );
